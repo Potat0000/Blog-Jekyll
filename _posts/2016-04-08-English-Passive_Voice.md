@@ -14,7 +14,7 @@ catalog: true
 
 ## 典例
 
-The God made the ring.
+The God **made** the ring.
 
 The ring **was made** by the God.
 
@@ -48,7 +48,7 @@ I was kissed by mum.
 
 Mum will kiss me.
 
-I will be killed by mum.
+I will be kissed by mum.
 
 - will be + done
 
@@ -60,6 +60,14 @@ I am being kissed by mum.
 
 - am/is/are being + done
 
+### 过去进行时
+
+Mum was kissing me.
+
+I was being kissed by mum.
+
+- was/were being + done
+
 ### 现在完成时
 
 Mum has kissed me.
@@ -67,6 +75,14 @@ Mum has kissed me.
 I have been kissed by mum.
 
 - have been + done
+
+### 过去完成时
+
+Mum had kissed me.
+
+I had been kissed by mum.
+
+- had been + done
 
 ## 带双宾语的被动语态
 
