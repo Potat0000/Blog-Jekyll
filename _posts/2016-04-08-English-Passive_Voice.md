@@ -10,11 +10,11 @@ catalog: true
 
 > Nothing. There's nothing… Wait…
 
-> **Made** in China
+> Made in China
 
 ## 典例
 
-The God **made** the ring.
+The God made the ring.
 
 The ring **was made** by the God.
 
@@ -52,6 +52,8 @@ I will be kissed by mum.
 
 - will be + done
 
+- im/is/are going to be + done
+
 ### 现在进行时
 
 Mum is kissing me.
@@ -74,7 +76,7 @@ Mum has kissed me.
 
 I have been kissed by mum.
 
-- have been + done
+- have/has been + done
 
 ### 过去完成时
 
@@ -86,7 +88,7 @@ I had been kissed by mum.
 
 ## 带双宾语的被动语态
 
-### She give me a bike yesterday.
+#### She give me a bike yesterday.
 
 动词短语为*v.* *sth.* **to** *sb.*
 
@@ -97,8 +99,12 @@ I had been kissed by mum.
 
 - give
 - pass
+- sell
+- take
+- lend
+- send
 
-### She bought me a new wallet yesterday
+#### She bought me a new wallet yesterday
 
 动词短语为*v.* *sth.* **for** *sb.*
 
@@ -112,6 +118,7 @@ I had been kissed by mum.
 - buy
 - cook
 - get
+- prepare
 
 *（注：以上四个例句中的**by sb.**和**yesterday**可互换）*
 
@@ -123,7 +130,7 @@ We were asked to do the work.
 
 ## 使役动词、感官动词的被动语态
 
-使役动词、感官动词的短语中的**to**被省略，被动语态中补全
+使役动词、感官动词*(make, see, hear)*的短语中的**to**被省略，被动语态中补全
 
 We often hear her sing in the classroom.
 
@@ -137,31 +144,41 @@ She is often heard **to** sing in the room.
 
 - 感官动词：
 
-1. look
-2. sound
-3. taste
-4. smell
-5. feel
+  1. look
+  2. sound
+  3. taste
+  4. smell
+  5. feel
+
+- 表示“发生，进行”之类的不及物动词，以主动表被动
+
+  如：
+
+  - happen
+  - take place
+  - break out
 
 - 不及物动词
 
-The door won't lock.
+  The door won't lock.
 
-*(这门锁不上，指**本身有问题**)*
+  *(这门锁不上，指**本身有问题**)*
 
-The door won't be locked.
+  The door won't be locked.
 
-*(不会有人来锁门，指**门没有锁是人的原因**)*
+  *(不会有人来锁门，指**门没有锁是人的原因**)*
 
-**主动语态表被动强调主语特征，被动语态强调外界作用造成的影响。**
+  **主动语态表被动强调主语特征，被动语态强调外界作用造成的影响。**
 
-常见有这种特点的动词
+  常见有这种特点的动词
 
-- driver ☆
-- sell ☆
-- write ☆
-- wash ☆
-- read
-- lock
-- clean
-- open
+    - sell ☆
+    - write ☆
+    - wash ☆
+    - drive ☆
+    - read
+    - lock
+    - clean
+    - open
+
+  加☆词后加well时主动表被动，其余不表示
