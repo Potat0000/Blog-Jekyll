@@ -6,3 +6,4 @@ npm-debug.log
 *.sh
 *.un~
 *.swp
+.directory
