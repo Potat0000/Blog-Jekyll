@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<!--<html lang="zh" manifest="cache.manifest">-->
+<html lang="zh">
+
+{% include head.html %}
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    {% include nav.html %}
+
+    {{ content }}
+
+    {% include footer.html %}
+
+</body>
+
+</html>

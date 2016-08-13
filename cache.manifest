@@ -1,0 +1,31 @@
+CACHE MANIFEST
+# VERSION 6.7.5-1
+
+CACHE:
+https://cdn.mathjax.org/mathjax/2.6-latest/localization/zh-hans/zh-hans.js?rev=2.6.1
+https://cdn.mathjax.org/mathjax/2.6-latest/jax/output/CommonHTML/config.js?rev=2.6.1
+https://cdn.mathjax.org/mathjax/2.6-latest/jax/output/CommonHTML/jax.js?rev=2.6.1
+https://cdn.mathjax.org/mathjax/2.6-latest/jax/output/CommonHTML/fonts/TeX/fontdata.js?rev=2.6.1
+https://cdn.mathjax.org/mathjax/2.6-latest/jax/output/CommonHTML/fonts/TeX/AMS-Regular.js?rev=2.6.1
+https://cdn.mathjax.org/mathjax/2.6-latest/jax/element/mml/optable/GeneralPunctuation.js?rev=2.6.1
+https://cdn.mathjax.org/mathjax/2.6-latest/localization/zh-hans/MathMenu.js?rev=2.6.1
+https://cdn.mathjax.org/mathjax/2.6-latest/config/TeX-AMS_HTML.js?rev=2.6.1
+https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML
+
+https://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css
+https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js
+
+https://gyj1109.github.io/img/default-bg.jpg
+https://gyj1109.github.io/img/tag-bg.jpg
+https://gyj1109.github.io/js/bootstrap.min.js
+https://gyj1109.github.io/js/hux-blog.min.js
+https://gyj1109.github.io/js/jquery.min.js
+https://gyj1109.github.io/css/bootstrap.min.css
+https://gyj1109.github.io/css/hux-blog.min.css
+https://gyj1109.github.io/css/syntax.css
+
+
+NETWORK:
+https://gyj1109.github.io/index.html
+https://gyj1109.github.io/tag/
+*
