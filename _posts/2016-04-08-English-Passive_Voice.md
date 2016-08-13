@@ -1,9 +1,3 @@
----
-layout: post
-title: 被动语态
-tags: 新东方英语笔记
-catalog: true
----
 ## 导入
 
 > What could you see? Could you see anything?
@@ -158,7 +152,16 @@ She is often heard **to** sing in the room.
   - take place
   - break out
 
-- 不及物动词
+- 以下动词后加well时主动表被动
+
+  - sell
+  - write
+  - wash
+  - drive
+
+  除了加well时主动表被动，**其余不表示**
+
+- 主动、被动强调的内容不同
 
   The door won't lock.
 
@@ -172,13 +175,11 @@ She is often heard **to** sing in the room.
 
   常见有这种特点的动词
 
-    - sell ☆
-    - write ☆
-    - wash ☆
-    - drive ☆
+    - sell
+    - write
+    - wash
+    - drive
     - read
     - lock
     - clean
     - open
-
-  加☆词后加well时主动表被动，其余不表示
