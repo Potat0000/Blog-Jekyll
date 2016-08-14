@@ -16,12 +16,15 @@ catalog: true
 
 - 能力
 - 许可
-- 推测（疑问句）
+- 推测（疑问句）  
   Can it be true?
 
 #### may
 
-- 请求
+- 请求  
+  May I go now?
+  - Yes, you may.
+  - No, you mustn't
 - 祝愿
 - 推测
 
@@ -29,9 +32,9 @@ catalog: true
 
 - 命令
 - 推测
-- mustn't
-  禁止
-- 推测的否定用以下形式
+- mustn't  
+  禁止  
+  推测的否定用以下形式
   - don't need to
   - don't have to
 
@@ -40,6 +43,8 @@ catalog: true
 - You needn't do that.
 
   此处的need为*情态动词*
+
+  need引导的一般疑问句肯定回答用must
 
 - She doesn't need to do that.
 
