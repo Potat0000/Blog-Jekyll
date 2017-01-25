@@ -7,3 +7,4 @@ npm-debug.log
 *.un~
 *.swp
 .directory
+Thumbs.db
