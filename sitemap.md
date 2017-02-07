@@ -5,7 +5,7 @@ layout: null
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
     <loc>http://www.gyj1109.tk/</loc>
-    <lastmod>{{ site.time }}</lastmod>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
   </sitemap>
   {% for post in site.posts %}
     <sitemap>
