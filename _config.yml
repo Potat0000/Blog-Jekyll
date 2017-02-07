@@ -71,8 +71,8 @@ kramdown:
 # Baidu Analytics
 #ba_track_id: 
 # Google Analytics
-#ga_track_id: ''            # Format: UA-xxxxxx-xx
-#ga_domain: 
+ga_track_id: 'UA-91573622-1'
+ga_domain: www.gyj1109.tk
 
 
 
