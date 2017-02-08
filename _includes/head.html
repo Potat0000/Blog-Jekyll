@@ -39,7 +39,29 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    
+	
+    <!--Prerender-->
+    <link rel="subresource" href="https://unsplash.it/{{ site.backgroundimage-w }}/{{ site.backgroundimage-h }}/?blur&random">
+    <link rel="prerender" href="{{ site.url }}">
+    <link rel="prerender" href="{{ site.url }}/tags/">
+    {% if paginator.posts %}
+    {% for post in paginator.posts %}
+    <link rel="prerender" href="{{ post.url | prepend: site.baseurl }}">
+    {% endfor %}
+    {% endif %}
+    {% if page.previous.url %}
+    <link rel="prerender" href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}">
+    {% endif %}
+    {% if page.next.url %}
+    <link rel="prerender" href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}">
+    {% endif %}
+    {% if paginator.previous_page %}
+    <link rel="prerender" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+    {% endif %}
+    {% if paginator.next_page %}
+    <link rel="prerender" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+    {% endif %}
+	
     {% if page.latex %}
     <!-- Mathjax -->
     {% include mathjax.html %}
