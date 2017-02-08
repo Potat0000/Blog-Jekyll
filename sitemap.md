@@ -2,27 +2,27 @@
 layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <sitemap>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
     <loc>{{ site.url }}</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-  </sitemap>
+  </url>
   {% for post in site.posts %}
-    <sitemap>
+    <url>
       <loc>{{ site.url }}{{ post.url }}</loc>
       {% if post.lastmod == null %}
         <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
       {% else %}
         <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
       {% endif %}
-    </sitemap>
+    </url>
   {% endfor %}
   {% for page in site.pages %}
     {% if page.sitemap != null and page.sitemap != empty %}
-      <sitemap>
+      <url>
         <loc>{{ site.url }}{{ page.url }}</loc>
         <lastmod>{{ page.sitemap.lastmod | date_to_xmlschema }}</lastmod>
-       </sitemap>
+       </url>
     {% endif %}
   {% endfor %}
-</sitemapindex>
+</urlset>
