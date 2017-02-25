@@ -7,16 +7,6 @@ layout: default
     header.intro-header{
         position: relative;
     }
-    @media screen and (max-width : 1200px) {
-        header.intro-header{
-            background-image: url('{% if page.header-img %}{{ site.baseurl }}/{{ page.header-img }}{% else %}{{ site.baseurl }}/{{ site.header-img }}{% endif %}')
-        }
-    }
-    @media screen and (min-width : 1201px) {
-        header.intro-header{
-            background-image: url('{% if page.header-img %}{{ site.baseurl }}/{{ page.header-img }}{% else %}https://unsplash.it/{{ site.backgroundimage-w }}/{{ site.backgroundimage-h }}/?blur&random{% endif %}')
-        }
-    }
     {% if page.header-mask %}
     header.intro-header .header-mask{
         width: 100%;

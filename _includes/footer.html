@@ -130,6 +130,11 @@
     <link href="https://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
 -->
 
+<script language="JavaScript" type="text/JavaScript">
+    var pattern = Trianglify({cell_size: Math.round(Math.random()*40) + 40, x_colors: 'random'});
+    document.getElementsByTagName("header")[0].style["background-image"] = 'url(' + pattern.png() + ')'; 
+</script>
+
 
 <!-- jquery.tagcloud.js -->
 <script>
