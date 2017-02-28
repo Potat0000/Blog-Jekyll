@@ -132,7 +132,12 @@
 
 <script language="JavaScript" type="text/JavaScript">
     var pattern = Trianglify({cell_size: Math.round(Math.random()*40) + 40, x_colors: 'random'});
-    document.getElementsByTagName("header")[0].style["background-image"] = 'url(' + pattern.png() + ')'; 
+    document.getElementsByTagName("header")[0].style["background-image"] = 'url(' + pattern.png() + ')';
+    var colorThief = new ColorThief();
+    var rgb = colorThief.getColor(pattern.canvas());
+    var hex = "#" + (((1 << 24) + (rgb[0] << 16) + (rgb[1] << 8) + rgb[2]).toString(16).slice(1));
+    var metaThemeColor = document.querySelector("meta[name=theme-color]");
+    metaThemeColor.setAttribute("content", hex);
 </script>
 
 
