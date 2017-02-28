@@ -131,7 +131,7 @@
 -->
 
 <script language="JavaScript" type="text/JavaScript">
-    var pattern = Trianglify({width: 4160, height: 2160, cell_size: Math.round(Math.random()*40) + 40, x_colors: 'random'});
+    var pattern = Trianglify({width: document.body.clientWidth * 1.1, height: document.body.clientWidth * 0.8, cell_size: Math.round(Math.random()*40) + 40, x_colors: 'random'});
     document.getElementsByTagName("header")[0].style["background-image"] = 'url(' + pattern.png() + ')';
     var colorThief = new ColorThief();
     var rgb = colorThief.getColor(pattern.canvas());
