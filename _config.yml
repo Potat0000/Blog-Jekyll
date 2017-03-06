@@ -15,9 +15,6 @@ backgroundimage-w: 1200
 inlineMath: [ ['$', '$']]
 displayMath: [ ['$$', '$$']]
 
-# Eevee Admin
-eevee: 0.0.2
-
 # SNS settings
 RSS: false
 weibo_username:     gyj1109
@@ -27,7 +24,7 @@ facebook_username:  gyj1109
 #twitter_username:  gyj1109
 # linkedin_username:  firstname-lastname-idxxxx
 
-
+exclude: [vendor]
 
 # Build settings
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
@@ -43,6 +40,9 @@ anchorjs: true                          # if you want to customize anchor. check
 # from PR#40, to support local preview for Jekyll 3.0
 gems:
   - jekyll-paginate
+  - jekyll-lunr-js-search
+  - jekyll-sitemap
+
 
 
 

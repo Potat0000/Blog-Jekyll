@@ -1,10 +1,4 @@
 _site
-node_modules
-npm-debug.log
-.DS_Store
-.DS_Store
-*.sh
-*.un~
-*.swp
-.directory
-Thumbs.db
+.sass-cache
+.jekyll-metadata
+Gemfile.lock
