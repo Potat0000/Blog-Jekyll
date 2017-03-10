@@ -46,6 +46,7 @@ gems:
 
 algolia:
   application_id: 'KLEHEUKFOJ'
+  index_name: 'MyBlog'
   read_only_api_key: 'd2ae4fcf15c04154136191455b26ba56'
   excluded_files:
     - 404.html
