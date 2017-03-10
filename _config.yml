@@ -1,7 +1,7 @@
 # Site settings
-title: Gyj1109's Blog
-SEOTitle: Gyj1109's Blog
-email: gyj1109@126.com
+title: "Gyj1109's Blog"
+SEOTitle: "Gyj1109's Blog"
+email: "gyj1109@126.com"
 description: "Hello World"
 keyword: "Gyj1109, 个人网站, 互联网, 前端, 设计, 产品"
 url: "http://gyj1109.tk"              # your host, for absolute URL
@@ -45,15 +45,16 @@ gems:
   - jekyll-sitemap
 
 feed:
-  title: Gyj1109's Blog
-  url: http://gyj1109.tk
-  author: Gyj1109
-
+  title: "Gyj1109's Blog"
+  url: "http://gyj1109.tk"
+  author: "Gyj1109"
 # Markdown settings
 # replace redcarpet to kramdown,
 # although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
 # document: http://jekyllrb.com/docs/configuration/#kramdown
-markdown: MyKramdown
+markdown: kramdown
+kramdown:
+  input: GFM
 
 
 # Disqus settings
