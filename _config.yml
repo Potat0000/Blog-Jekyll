@@ -40,17 +40,9 @@ anchorjs: true                          # if you want to customize anchor. check
 # from PR#40, to support local preview for Jekyll 3.0
 gems:
   - jekyll-paginate
-  - algoliasearch-jekyll
+  - jekyll-lunr-js-search
   - jekyll-feed
   - jekyll-sitemap
-
-algolia:
-  application_id: 'KLEHEUKFOJ'
-  index_name: 'MyBlog'
-  read_only_api_key: 'd2ae4fcf15c04154136191455b26ba56'
-  excluded_files:
-    - 404.html
-    - index.html
 
 feed:
   title: "Gyj1109's Blog"

@@ -15,12 +15,11 @@ install:
   - bundle update
 
 script:
-  - bundle exec jekyll algolia push
   - jekyll b
 
 after_success:
   - cd ./_site
-  - rm README
+  - rm README Gemfile Gemfile.lock LICENSE
   - git init
   - git config user.name "Gyj1109 - Travis CI"
   - git config user.email "gaoyj1109@gmail.com"
