@@ -45,8 +45,6 @@ gems:
   - jekyll-sitemap
 
 algolia:
-  application_id: 'MyBlog'
-  index_name: 'jekyll'
   read_only_api_key: 'd2ae4fcf15c04154136191455b26ba56'
   excluded_files:
     - 404.html
