@@ -41,19 +41,19 @@ anchorjs: true                          # if you want to customize anchor. check
 gems:
   - jekyll-paginate
   - jekyll-lunr-js-search
+  - jekyll-feed
   - jekyll-sitemap
 
-
-
+feed:
+  title: Gyj1109's Blog
+  url: http://gyj1109.tk
+  author: Gyj1109
 
 # Markdown settings
 # replace redcarpet to kramdown,
 # although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
 # document: http://jekyllrb.com/docs/configuration/#kramdown
-markdown: kramdown
-kramdown:
-  input: GFM                            # use Github Flavored Markdown !important
-
+markdown: MyKramdown
 
 
 # Disqus settings
