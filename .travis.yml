@@ -11,7 +11,8 @@ env:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # 为 html-proofer 的安装加速
 
 install:
-  - npm install --save simple-jekyll-search
+  - npm install -g bower
+  - bower install --save simple-jekyll-search
   - bundle install
 
 script:
