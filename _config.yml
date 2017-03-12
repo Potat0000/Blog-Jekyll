@@ -50,19 +50,6 @@ algolia:
   excluded_files:
     - index.html
     - tags.html
-  settings:
-    attributesToIndex:
-      - title
-      - h1
-      - h2
-      - h3
-      - h4
-      - h5
-      - h6
-      - p
-      - unordered(text)
-      - unordered(tags)
-      - ul
 
 feed:
   title: "Gyj1109's Blog"
