@@ -45,8 +45,8 @@ gems:
   - jekyll-sitemap
 
 algolia:
-  application_id: 'your_application_id'
-  index_name:     'your_index_name'
+  application_id: 'KLEHEUKFOJ'
+  index_name:     'MyBlog'
   excluded_files:
     - index.html
     - tags.html
