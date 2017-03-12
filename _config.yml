@@ -39,9 +39,15 @@ anchorjs: true                          # if you want to customize anchor. check
 # Gems
 # from PR#40, to support local preview for Jekyll 3.0
 gems:
+  - jekyll-lunr-js-search
   - jekyll-paginate
   - jekyll-feed
   - jekyll-sitemap
+
+lunr_search:
+  excludes:
+    - index.html
+    - tags.html
 
 feed:
   title: "Gyj1109's Blog"
