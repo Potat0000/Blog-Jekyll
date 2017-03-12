@@ -62,13 +62,18 @@ sitemap: false
     );
 
     search.addWidget(
-      instantsearch.widgets.hits({
+      instantsearch.widgets.infiniteHits({
         container: '#hits',
         hitsPerPage: 10,
         templates: {
           item: getTemplate('hit'),
           empty: getTemplate('no-results')
         }
+      })
+    );
+    search.addWidget(
+      instantsearch.widgets.pagination({
+        container: '#pagination'
       })
     );
     search.start();
