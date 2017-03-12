@@ -55,6 +55,8 @@
     {% if paginator.next_page %}
     <link rel="prerender" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
     {% endif %}
+
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.css">
 	
     {% if page.latex %}
     <!-- Mathjax -->

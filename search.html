@@ -4,38 +4,83 @@ layout: page
 permalink: /search/
 sitemap: false
 ---
-<form action="/search" method="get">
-  <input type="text" id="search-query" name="q" placeholder="Search" autocomplete="off">
-</form>
-<section id="search-results" style="display: none;"> </section>
-{% raw %}
-<script id="search-results-template" type="text/mustache">
-  {{#entries}}
-    <article>
-      <h3>
-        {{#date}}<small><time datetime="{{pubdate}}" pubdate>{{displaydate}}</time></small>{{/date}}
-        <a href="{{url}}">{{title}}</a>
-      </h3>
-      {{#is_post}}
-      <ul>
-        {{#tags}}<li>{{.}} </li>{{/tags}}
-      </ul>
-      {{/is_post}}
-    </article>
-  {{/entries}}
-</script>
-{% endraw %}
-<script src="/js/jquery.min.js "></script>
-<script type="text/javascript">
-  $(function() {
-    $('#search-query').lunrSearch({
-      indexUrl  : '/js/index.json',           // url for the .json file containing search index data
-      results   : '#search-results',          // selector for containing search results element
-      template  : '#search-results-template', // selector for Mustache.js template
-      titleMsg  : '<h1>Search results<h1>',   // message attached in front of results (can be empty)
-      emptyMsg  : '<p>Nothing found.</p>'     // shown message if search returns no results
-    });
-  });
+<div id="search-input"></div>
+<div id="search-input-icon"></div>
+
+<main>
+  <div id="right-column">
+    <div id="sort-by-wrapper"><span id="sort-by"></span></div>
+    <div id="stats"></div>
+    <div id="hits"></div>
+    <div id="pagination"></div>
+  </div>
+</main>
+
+<!-- TEMPLATES -->
+<script type="text/html" id="hit-template">
+  <div class="hit">
+    <div class="hit-image">
+      <img src="{{image}}" alt="{{name}}">
+    </div>
+    <div class="hit-content">
+      <h3 class="hit-price">${{price}}</h3>
+      <h2 class="hit-name">{{{_highlightResult.name.value}}}</h2>
+      <p class="hit-description">{{{_highlightResult.description.value}}}</p>
+    </div>
+  </div>
 </script>
 
- <script src="/js/search.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/html" id="no-results-template">
+  <div id="no-results-message">
+    <p>We didn't find any results for the search <em>"{{query}}"</em>.</p>
+    <a href="." class='clear-all'>Clear search</a>
+  </div>
+</script>
+<!-- /TEMPLATES -->
+
+<!-- SCRIPTS -->
+<script src="//cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.js"></script>
+
+<script>
+  app({
+    appId: 'KLEHEUKFOJ',
+    apiKey: 'd2ae4fcf15c04154136191455b26ba56',
+    indexName: 'MyBlog'
+  });
+
+  function app(opts) {
+    var search = instantsearch({
+      appId: opts.appId,
+      apiKey: opts.apiKey,
+      indexName: opts.indexName,
+      urlSync: true
+    });
+
+    search.addWidget(
+      instantsearch.widgets.searchBox({
+        container: '#search-input',
+        placeholder: 'Search for post'
+      })
+    );
+
+    search.addWidget(
+      instantsearch.widgets.hits({
+        container: '#hits',
+        hitsPerPage: 10,
+        templates: {
+          item: getTemplate('hit'),
+          empty: getTemplate('no-results')
+        }
+      })
+    );
+    search.start();
+  }
+
+  function getTemplate(templateName) {
+    return document.querySelector('#' + templateName + '-template').innerHTML;
+  }
+
+  function getHeader(title) {
+    return '<h5>' + title + '</h5>';
+  }
+</script>
