@@ -14,7 +14,7 @@ install:
   - bundle install
 
 script:
-  - bundle exec jekyll algolia push
+#  - bundle exec jekyll algolia push
   - jekyll b
 
 after_success:
