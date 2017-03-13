@@ -16,18 +16,19 @@ sitemap: false
   </div>
 </main>
 
+{% raw %}
 <!-- TEMPLATES -->
 <script type="text/html" id="hit-template">
   <div>
     <div>
       <h3><a href="{{url}}">{{title}}</a></h3>
-      {% if {{h1.value}} %}<p>{{_highlightResult.h1.value}}</p><br>{% endif %}
-      {% if {{h2.value}} %}<p>{{_highlightResult.h2.value}}</p><br>{% endif %}
-      {% if {{h3.value}} %}<p>{{_highlightResult.h3.value}}</p><br>{% endif %}
-      {% if {{h4.value}} %}<p>{{_highlightResult.h4.value}}</p><br>{% endif %}
-      {% if {{h5.value}} %}<p>{{_highlightResult.h5.value}}</p><br>{% endif %}
-      {% if {{h6.value}} %}<p>{{_highlightResult.h6.value}}</p><br>{% endif %}
-      {% if {{text.value}} %}<p>{{_highlightResult.text.value}}</p>{% endif %}
+      <p>{{{_highlightResult.h1.value}}}</p>
+      <p>{{{_highlightResult.h2.value}}}</p>
+      <p>{{{_highlightResult.h3.value}}}</p>
+      <p>{{{_highlightResult.h4.value}}}</p>
+      <p>{{{_highlightResult.h5.value}}}</p>
+      <p>{{{_highlightResult.h6.value}}}</p>
+      <p>{{{_highlightResult.text.value}}}</p>
     </div>
   </div>
 </script>
@@ -39,6 +40,7 @@ sitemap: false
   </div>
 </script>
 <!-- /TEMPLATES -->
+{% endraw %}
 
 <!-- SCRIPTS -->
 <script src="//cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.js"></script>
