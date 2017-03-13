@@ -19,17 +19,29 @@ sitemap: false
 {% raw %}
 <!-- TEMPLATES -->
 <script type="text/html" id="hit-template">
-  <div>
-    <div>
-      <h3><a href="{{url}}">{{title}}</a></h3>
-      <p>{{{_highlightResult.h1.value}}}</p>
-      <p>{{{_highlightResult.h2.value}}}</p>
-      <p>{{{_highlightResult.h3.value}}}</p>
-      <p>{{{_highlightResult.h4.value}}}</p>
-      <p>{{{_highlightResult.h5.value}}}</p>
-      <p>{{{_highlightResult.h6.value}}}</p>
-      <p>{{{_highlightResult.text.value}}}</p>
+  <div class="col-lg-8 col-lg-offset-1
+              col-md-8 col-md-offset-1
+              col-sm-12
+              col-xs-12
+              postlist-container">
+    <div class="post-preview">
+      <a href="{{url}}">
+        <h2 class="post-title">{{title}}</h2>
+        <div class="post-content-preview">
+          {{{_highlightResult.h1.value}}}
+          {{{_highlightResult.h2.value}}}
+          {{{_highlightResult.h3.value}}}
+          {{{_highlightResult.h4.value}}}
+          {{{_highlightResult.h5.value}}}
+          {{{_highlightResult.h6.value}}}
+          {{{_highlightResult.text.value}}}
+        </div>
+      </a>
+      <p class="post-meta">
+        Posted by Gyj1109 on 
+      </p>
     </div>
+    <hr>
   </div>
 </script>
 
