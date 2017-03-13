@@ -22,7 +22,13 @@ sitemap: false
   <div>
     <div>
       <h3><a href="{{url}}">{{title}}</a></h3>
-      <p>{{{_highlightResult.text.value}}}</p>
+      {% if {{h1.value}} %}<p>{{_highlightResult.h1.value}}</p><br>{% endif %}
+      {% if {{h2.value}} %}<p>{{_highlightResult.h2.value}}</p><br>{% endif %}
+      {% if {{h3.value}} %}<p>{{_highlightResult.h3.value}}</p><br>{% endif %}
+      {% if {{h4.value}} %}<p>{{_highlightResult.h4.value}}</p><br>{% endif %}
+      {% if {{h5.value}} %}<p>{{_highlightResult.h5.value}}</p><br>{% endif %}
+      {% if {{h6.value}} %}<p>{{_highlightResult.h6.value}}</p><br>{% endif %}
+      {% if {{text.value}} %}<p>{{_highlightResult.text.value}}</p>{% endif %}
     </div>
   </div>
 </script>
@@ -41,9 +47,9 @@ sitemap: false
 
 <script>
   app({
-    appId: 'W6OTMGL1RC',
-    apiKey: '4e657d886581c3c0178218a2b9195db9',
-    indexName: 'Blog'
+    appId: '{{ site.algolia.application_id }}',
+    apiKey: '{{ site.algolia.search_api }}',
+    indexName: '{{ site.algolia.index_name }}'
   });
 
   function app(opts) {

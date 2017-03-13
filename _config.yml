@@ -46,7 +46,8 @@ gems:
 
 algolia:
   application_id: 'W6OTMGL1RC'
-  index_name:     'Blog'
+  search_api: '4e657d886581c3c0178218a2b9195db9'
+  index_name: 'Blog'
   excluded_files:
     - index.html
     - tags.html
