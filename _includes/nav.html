@@ -3,18 +3,12 @@
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header page-scroll">
-           
-                
-            
-                
-            </div>
-                 <button type="button" class="navbar-toggle">
+            <button type="button" class="navbar-toggle">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
-            
-                </button>
+            </button>
             <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
         </div>
 
@@ -32,19 +26,15 @@
                         <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
                     </li>
                     {% endif %}{% endfor %}
-                    </ul>
+                </ul>
                     
-                        <div class="container">
-                <div class="search-box">
-                    <input type="text" />
-                    <span></span>
+                <div class="container">
+                    <div class="search-box">
+                        <input type="text" />
+                        <span></span>
+                    </div>
                 </div>
             </div>
-                    
-                
-           
-           
-                 </div>
         </div>
         <!-- /.navbar-collapse -->
     </div>
