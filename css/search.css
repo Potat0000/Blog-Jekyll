@@ -45,7 +45,7 @@ display:inline-block;}
 .front{
     position:absolute;
     right:24px;
-    top:13px;
+    top:10px;
     transform: rotate(-45deg);
     opacity:0;
     animation-delay: 2s;
@@ -59,7 +59,7 @@ display:inline-block;}
 .back{
     position:absolute;
     right:-3px;
-    top:33px;
+    top:30px;
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     transform: rotate(-45deg);

@@ -51,6 +51,7 @@ algolia:
   excluded_files:
     - index.html
     - tags.html
+    - google50bd0ac30061dd58.html
 
 feed:
   title: "Gyj1109's Blog"
