@@ -5,11 +5,7 @@
         <div class="navbar-header page-scroll">
            
                 
-            <div class="container">
-                <div class="search-box">
-                    <input type="text" />
-                    <span></span>
-                </div>
+            
                 
             </div>
                  <button type="button" class="navbar-toggle">
@@ -36,15 +32,16 @@
                         <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
                     </li>
                     {% endif %}{% endfor %}
-                    <li>
+                    </ul>
+                    
                         <div class="container">
                 <div class="search-box">
                     <input type="text" />
                     <span></span>
                 </div>
             </div>
-                    </li>
-                </ul>
+                    
+                
            
            
                  </div>
