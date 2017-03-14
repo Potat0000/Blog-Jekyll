@@ -133,17 +133,13 @@
 -->
 
 <script>
-    async('//cdn.bootcss.com/trianglify/1.0.1/trianglify.min.js',function(){
-        var pattern = Trianglify({width: document.body.clientWidth * 1.1, height: document.body.clientWidth * 0.8, cell_size: Math.round(Math.random()*40) + 40, x_colors: 'random'});
-	async('//cdn.bootcss.com/color-thief/2.0.1/color-thief.min.js',function(){
-            var colorThief = new ColorThief();
-            var rgb = colorThief.getColor(pattern.canvas());
-            var hex = "#" + (((1 << 24) + (rgb[0] << 16) + (rgb[1] << 8) + rgb[2]).toString(16).slice(1));
-            var metaThemeColor = document.querySelector("meta[name=theme-color]");
-            metaThemeColor.setAttribute("content", hex);
-	});
+    var pattern = Trianglify({width: document.body.clientWidth * 1.1, height: document.body.clientWidth * 0.8, cell_size: Math.round(Math.random()*40) + 40, x_colors: 'random'});
+    var colorThief = new ColorThief();
+    var rgb = colorThief.getColor(pattern.canvas());
+    var hex = "#" + (((1 << 24) + (rgb[0] << 16) + (rgb[1] << 8) + rgb[2]).toString(16).slice(1));
+    var metaThemeColor = document.querySelector("meta[name=theme-color]");
+    metaThemeColor.setAttribute("content", hex);
 	document.getElementsByTagName("header")[0].style["background-image"] = 'url(' + pattern.png() + ')';
-   });
 </script>
 
 <script>
