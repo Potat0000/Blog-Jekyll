@@ -2,10 +2,6 @@ language: ruby
 rvm:
 - 2.1
 
-branches:
-  only:
-  - /pages-(.*)/ # 测试每一个以 "pages-" 开头的分支
-
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # 为 html-proofer 的安装加速
@@ -24,5 +20,5 @@ after_success:
   - git config user.name "Gyj1109 - Travis CI"
   - git config user.email "gaoyj1109@gmail.com"
   - git add .
-  - git commit -m "Auto Build"
+  - git commit -m "Auto Build from Jekyll"
   - git push --force --quiet "https://${GitHub_TAKEN}@${GitHub_URL}" master:master
